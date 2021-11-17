@@ -1,29 +1,18 @@
 <p id="notice"><%= notice %></p>
+<br/><br/>
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @contact.first_name %>
+    <%= @contact.last_name %>
+  </h1>
 
-<p>
-  <strong>First name:</strong>
-  <%= @contact.first_name %>
-</p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @contact.last_name %>
-</p>
+<p class="lead">
+  <%= @contact.email %> |
+  <%= @contact.phone %>|
+   <%= @contact.twitter %>
+</p><br/><br/>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @contact.twitter %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
-</p>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<%= link_to 'Edit', edit_contact_path(@contact), class:"btn btn-success" %>
+<%= link_to 'Back', contacts_path, class:"btn btn-secondary" %>
+</div>

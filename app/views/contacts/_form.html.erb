@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name , class:"form-control"%>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+    <%= form.text_field :twitter,class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= form.label :phone %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone, class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-secondary" %>
   </div>
 <% end %>
